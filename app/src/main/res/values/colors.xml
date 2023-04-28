@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FBBC05</color>
+    <color name="colorPrimary">#F8BC24</color>
+    <color name="colorPrimaryDark">#F1AC00</color>
+    <color name="colorAccent">#FFDE8A</color>
+    <color name="textColorPrimary1">#000000</color>
+    <color name="toolbarIconColor">@color/textColorPrimary1</color>
+    <color name="loginPageBackgroundColor">#F8BC24</color>
+    <color name="BackgroundColor1">#FFFFFF</color>
+    <color name="textInputOutlineColor">#FFDE8A</color>
+    <color name = "bgcolor">#FFD858</color>
+    <color name = "textcolor">#FDFCFF</color>
+    <color name = "subtextcolor">#B7EEEEEE</color>
+    <color name = "btnstart">#7B7EA4</color>
+    <color name = "btnend">#575C84</color>
+    <color name = "cardstart">#93B7D7</color>
+    <color name = "cardend">#474D71</color>
+</resources>

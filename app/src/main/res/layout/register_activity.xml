@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/loginPageBackgroundColor">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/logurt2" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scrollview_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fullame1"
+                    style="@style/Widget.Bee.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    app:boxStrokeColor="@color/loginPageBackgroundColor"
+                    app:hintTextColor="@color/loginPageBackgroundColor"
+                    android:hint="Enter Full Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fullame"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:drawableStart="@drawable/ic_baseline_person_24"
+                        android:drawableLeft="@drawable/ic_baseline_person_24"
+                        android:drawablePadding="5dp"
+                        tools:ignore="TextContrastCheck">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/username21"
+                    style="@style/Widget.Bee.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:boxStrokeColor="@color/loginPageBackgroundColor"
+                    app:hintTextColor="@color/loginPageBackgroundColor"
+                    android:hint="Enter Username">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/username2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:maxLines="1"
+
+                        android:drawableStart="@drawable/ic_baseline_email_24"
+                        android:drawableLeft="@drawable/ic_baseline_email_24"
+                        android:drawablePadding="5dp"
+                        tools:ignore="TextContrastCheck">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/newpass1"
+                    style="@style/Widget.Bee.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    app:passwordToggleEnabled="true"
+                    app:boxStrokeColor="@color/loginPageBackgroundColor"
+                    app:hintTextColor="@color/loginPageBackgroundColor"
+                    android:hint="Enter Password"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/newpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:drawableLeft="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="5dp"
+                        >
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirmpass1"
+                    style="@style/Widget.Bee.TextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    app:passwordToggleEnabled="true"
+                    android:hint="Confirm Password"
+                    app:boxStrokeColor="@color/loginPageBackgroundColor"
+                    app:hintTextColor="@color/loginPageBackgroundColor"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/confirmpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:drawableStart="@drawable/ic_baseline_lock_24"
+                        android:drawableLeft="@drawable/ic_baseline_lock_24"
+                        android:drawablePadding="5dp"
+                        >
+
+                    </com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="?android:attr/listDivider" >
+
+                </View>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/createbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="@{()->myViewModel.sumbitButton()}"
+                    android:text="REGISTER"
+                    android:textColor="#514A08"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:cornerRadius="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/Login_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:textSize="18dp"
+
+                        android:text="Already Have an Account?" >
+
+                    </com.google.android.material.textview.MaterialTextView>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/backbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/Login_textView"
+                        android:layout_toRightOf="@id/Login_textView"
+                        android:onClick="@{()->myViewModel.login()}"
+                        android:text=" Login"
+                        android:textSize="18dp"
+                        android:textColor="@color/colorPrimary"
+                        tools:ignore="TextContrastCheck,TextContrastCheck">
+
+                    </com.google.android.material.textview.MaterialTextView>
+
+                </RelativeLayout>
+                <View
+                    android:id="@+id/divider2"
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="?android:attr/listDivider" >
+                </View>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
